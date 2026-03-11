@@ -7,9 +7,9 @@ import {
   import { InjectRepository } from '@nestjs/typeorm';
   import { Repository } from 'typeorm';
   import { Beer } from './beer.entity';
-  import { CreateBeerDto } from 'src/dto/create-beer.dto';
-  import { UpdateBeerDto } from 'src/dto/update-beer.dto';
-  import { FilterBeersDto } from 'src/dto/filter-beer.dto';
+  import { CreateBeerDto } from 'src/beers/dto/create-beer.dto';
+  import { UpdateBeerDto } from 'src/beers/dto/update-beer.dto';
+  import { FilterBeersDto } from 'src/beers/dto/filter-beer.dto';
   
   @Injectable()
   export class BeersService {
