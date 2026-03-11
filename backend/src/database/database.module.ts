@@ -15,7 +15,8 @@ import { Beer } from '../beers/beer.entity'
 
         synchronize: config.get('NODE_ENV') !== 'production',
 
-        logging: config.get('NODE_ENV') !== 'production',
+        //logging: config.get('NODE_ENV') !== 'production',
+        logging: false
       }),
     }),
   ],
