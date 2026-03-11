@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigService } from '@nestjs/config';
+import { Beer } from '../beers/beer.entity'
 
 @Module({
   imports: [
@@ -10,7 +11,7 @@ import { ConfigService } from '@nestjs/config';
         type: 'postgres',
         url: config.get<string>('DATABASE_URL'),
 
-        entities: [],
+        entities: [Beer],
 
         synchronize: config.get('NODE_ENV') !== 'production',
 
