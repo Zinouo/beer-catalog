@@ -13,7 +13,8 @@ import { Beer } from '../beers/beer.entity'
 
         entities: [Beer],
 
-        synchronize: config.get('NODE_ENV') !== 'production',
+        //synchronize: config.get('NODE_ENV') !== 'production',
+        synchronize: true,
 
         //logging: config.get('NODE_ENV') !== 'production',
         logging: false

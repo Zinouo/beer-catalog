@@ -1,3 +1,5 @@
+import BeerForm from '../components/BeerForm'
+
 export default function CreateBeerPage() {
-    return <div className="p-8 text-2xl">CreateBeerPage</div>
-  }
+  return <BeerForm />
+}

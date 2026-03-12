@@ -7,7 +7,7 @@ interface Props {
 }
 
 export default function BeerCard({ beer }: Props) {
-  const hasImage = beer.pictures?.length > 0
+  const hasImage = beer.pictureCount > 0
 
   const alcoholColor =
     beer.alcoholPercentage < 4 ? 'bg-green-100 text-green-700' :

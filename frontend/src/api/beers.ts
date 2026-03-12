@@ -4,7 +4,7 @@ export interface Beer {
     category: string
     description: string
     alcoholPercentage: number
-    pictures: string[] 
+    pictureCount: number
     validityStart: string | null
     validityEnd: string | null
     createdBy: string
